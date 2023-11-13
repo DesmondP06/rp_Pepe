@@ -19,22 +19,22 @@ async function getData(){
     table.forEach(row => {
         const columns = row.split(','); //split row on comma
 
-        const waterW = parseFloat(columns[0]); //Assign temp values
-        water.push(waterW); //Push temp values. +14 shifts x axis to bottom of screen visually.
+        const waterW = parseFloat(columns[0]); 
+        water.push(waterW); 
 
-        const ethanolE = parseFloat(columns[1]); // n. hemi. temp deviation
+        const ethanolE = parseFloat(columns[1]);
         ethanol.push(ethanolE);
 
-        const I3C1I = parseFloat(columns[2]); // s. hemi. temp deviation
+        const I3C1I = parseFloat(columns[2]);
         I3C1.push(I3C1I);
 
-        const I3C2I = parseFloat(columns[3]); //Assign temp values
-        I3C2.push(I3C2I); //Push temp values. +14 shifts x axis to bottom of screen visually.
+        const I3C2I = parseFloat(columns[3]);
+        I3C2.push(I3C2I); 
 
-        const NAC1N = parseFloat(columns[4]); // n. hemi. temp deviation
+        const NAC1N = parseFloat(columns[4]);
         NAC1.push(NAC1N);
 
-        const NAC2N = parseFloat(columns[5]); // s. hemi. temp deviation
+        const NAC2N = parseFloat(columns[5]);
         NAC2.push(NAC2N);
 
 
