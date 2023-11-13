@@ -1,7 +1,8 @@
 //Demonstrate how to create a line chart 
 
 async function getData(){
-    const response = await fetch('../data/data.csv');
+    const response = await fetch('/rp_Pepe/data/data.csv')
+    //const response = await fetch('../data/data.csv');
     const data = await response.text();
     console.log(data);
 
